@@ -45,7 +45,7 @@ def generate_user_data(start_index, num_users, user_id_start):
 
 # Generar y guardar el archivo CSV
 def create_csv(num_users, filename):
-    start_index = 0
+    start_index = 9
     user_id_start = 10000
     df = pd.DataFrame(data, columns=columns)
     df = pd.concat([df, generate_user_data(start_index, num_users, user_id_start)])
